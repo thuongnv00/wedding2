@@ -1,0 +1,115 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.invitation-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  /* background-color: #fff; */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* semi-transparent white */
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-section {
+  margin-top: 1rem;
+}
+
+.album {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/*add */
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 720px;
+  position: relative;
+}
+
+.gallery-container {
+  overflow: hidden;
+  width: 660px;
+  /* 3 images * 220px (img width + margin) */
+}
+
+/* .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+} */
+.gallery {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* .gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+} */
+
+.gallery img {
+  width: 200px;
+  margin: 0 10px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* .gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery img.active {
+  display: block;
+} */
+
+
+.nav {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav.prev {
+  margin-right: 10px;
+}
+
+.nav.next {
+  margin-left: 10px;
+}
+
+
+
+/* Pure CSS Scroll Reveal (with :has support) */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
